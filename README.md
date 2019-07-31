@@ -1,7 +1,8 @@
 # HowToHash-Excel
 Split out from the not-yet-ripe repo
 
-### Purpose One of the most frequent excuses spammers give when they're caught selling email lists is that it was an accidental share of a do-not-contact list - or exclusion list. Or perhaps a former employee took it with them when they left.
+### Purpose
+One of the most frequent excuses spammers give when they're caught selling email lists is that it was an accidental share of a do-not-contact list - or exclusion list. Or perhaps a former employee took it with them when they left.
 
 But they can't remember who that was...Seems to happen with amazing frequency. Basically there's a lot of excuses out there.
 
@@ -19,11 +20,13 @@ do the changes in Excel, get 'em working then export the .bas files
 on commit / merge the simple text diff should highlight anything that needs to be back merged into the workbook
 There's no way of doing this in Excel without the associated security setting adjustments related to Excel Trust Centre
 Considering moving from XLSM to XSLB but think there may be situations where interoperability may be needed
-#### mod_Comparisons.bas All the macros and methods created to operate the functionality in this specific workbook - there's only really three functions needed and they're very simple.
+#### mod_Comparisons.bas
+All the macros and methods created to operate the functionality in this specific workbook - there's only really three functions needed and they're very simple.
 
 Seemed to be a gap between Excel 2013 x64 TLB and some of the MSDN references so have gone "back to basics" on simple algos.
 
-#### mod_SimpleAlgos.bas I've re-used a pretty good answer from stackoverflow - hopefully this kind of approach would be widely used.
+#### mod_SimpleAlgos.bas
+I've re-used a pretty good answer from stackoverflow - hopefully this kind of approach would be widely used.
 
 The problem is where the algorithm changes any hashed list then has to be regenerated, nullifying the point of the exercise. For that reason any changes to this code file should be defered unless there's an exceptionally good reason to do so.
 
