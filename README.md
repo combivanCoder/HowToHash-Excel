@@ -8,6 +8,8 @@ But they can't remember who that was...Seems to happen with amazing frequency. B
 
 So how do you ensure that someone can't lift the list of valid email addresses or contact numbers and re-use them? Simple - you translate your exclusion list into hashed values. At that point you're no longer storing plain text block / exclusion lists.
 
+The example workbook shows how an existing set of hashed emails can be used to check if an email is on the list or not.
+
 Either have the developers integrate their automated process (replicating this process, but not using the spreadsheet), or manually compare those hashed values to any new data using the spreadsheet. If using the latter, the resulting list could then be used in a mail merge without storing any blocked contact details.
 
 That way someone who doesn't want spam doesn't repeatedly get spammed and data traders don't need to store raw data which can be nicked.
